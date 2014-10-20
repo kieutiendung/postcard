@@ -81,7 +81,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="285" width="327" height="30"/>
+                                    <rect key="frame" x="16" y="269" width="327" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2f-2P-7s2">
@@ -104,9 +104,54 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="89" width="219" height="80"/>
+                                    <rect key="frame" x="16" y="82" width="209" height="37"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqQ-mR-Z9a">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="140" width="192" height="77"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkz-jw-N4u">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="UnHide">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="307" width="59" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="UnHildeNameLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIK-4o-GeQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-MN-rvk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="ChangeColor">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="307" width="91" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeColorNameLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7r-Ml-xth"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-V4-12r">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Clear text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="274" y="307" width="69" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clearTextNameLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlT-wg-Wew"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-oU-4aC">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal">
@@ -125,6 +170,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWR-LB-fbi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="UpdateText">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="307" width="84" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="updateTextNameLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4w-Ga-xyd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -135,9 +192,14 @@
                                 <exclude reference="lvU-UI-p42"/>
                                 <exclude reference="N2f-2P-7s2"/>
                                 <exclude reference="dXL-71-2vy"/>
+                                <exclude reference="XqQ-mR-Z9a"/>
+                                <exclude reference="dkz-jw-N4u"/>
+                                <exclude reference="ghu-MN-rvk"/>
+                                <exclude reference="SWw-V4-12r"/>
                                 <exclude reference="iDE-oU-4aC"/>
                                 <exclude reference="VHL-Rt-4rN"/>
                                 <exclude reference="YFA-4q-Lkk"/>
+                                <exclude reference="tWR-LB-fbi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -148,9 +210,14 @@
                                 <include reference="lvU-UI-p42"/>
                                 <include reference="N2f-2P-7s2"/>
                                 <include reference="dXL-71-2vy"/>
+                                <include reference="XqQ-mR-Z9a"/>
+                                <include reference="dkz-jw-N4u"/>
+                                <include reference="ghu-MN-rvk"/>
+                                <include reference="SWw-V4-12r"/>
                                 <exclude reference="iDE-oU-4aC"/>
                                 <exclude reference="VHL-Rt-4rN"/>
                                 <exclude reference="YFA-4q-Lkk"/>
+                                <include reference="tWR-LB-fbi"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -165,6 +232,7 @@
                         <outlet property="enterName" destination="aal-Yj-HyU" id="vTA-mG-Ucw"/>
                         <outlet property="labelMessage" destination="dXL-71-2vy" id="IYR-6m-vrs"/>
                         <outlet property="myView" destination="8bC-Xf-vdC" id="cgK-AQ-jsf"/>
+                        <outlet property="nameLabel" destination="XqQ-mR-Z9a" id="G4q-VF-4F9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

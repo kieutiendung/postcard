@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var enterName: UITextField!
     @IBOutlet weak var enterMessage: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
 
     @IBOutlet weak var buttonchange: UIButton!
     @IBOutlet var myView: UIView!
@@ -30,6 +31,22 @@ class ViewController: UIViewController {
         buttonchange.backgroundColor = UIColor.blueColor();
         
         
+    }
+    
+    @IBAction func UnHildeNameLabel(sender: UIButton) {
+        nameLabel.hidden = false;
+    }
+    
+    @IBAction func updateTextNameLabel(sender: UIButton) {
+        nameLabel.text = "my label name is " + enterName.text;
+    }
+    
+    @IBAction func changeColorNameLabel(sender: UIButton) {
+        nameLabel.textColor = UIColor.blueColor();
+    }
+    
+    @IBAction func clearTextNameLabel(sender: UIButton) {
+        nameLabel.text = "";
     }
     override func viewDidLoad() {
         super.viewDidLoad()
