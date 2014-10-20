@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBAction func sendMessage(sender: UIButton) {
         labelMessage.hidden = false;
         //labelMessage.text   = "Hello Worlk";
+        
+        // add comment here for test
+        
         labelMessage.text = enterMessage.text;
         enterMessage.text = "";
         //enterMessage.resignFirstResponder();
